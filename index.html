@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de imagen de Telescopío</title>
+    <style>
+        body {
+            background: black;
+        }
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 5s ease;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity:  0;
+                filter: blur(20px);
+            }
+            10% {
+                opacity: 1;
+                filter: brightness(2) blur(10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="NASA.jpg" alt="" width="100%">
+</body>
+</html>
